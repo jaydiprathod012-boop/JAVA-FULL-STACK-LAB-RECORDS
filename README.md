@@ -1,8 +1,8 @@
 # JAVA-FULL-STACK-LAB-RECORDS
 
 ## Screenshots
-![CODE Screen](./images/<img width="1366" height="768" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/1d233ba8-243f-408a-a417-013c8fcadab2" />
+![CODE Screen](<img width="1366" height="768" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/1d233ba8-243f-408a-a417-013c8fcadab2" />
 .png)
-![OUTPUT Screen](./images/<img width="838" height="391" alt="Screenshot 2026-01-22 154711" src="https://github.com/user-attachments/assets/60128c04-b0c6-4b8a-8a3e-f848ef0dd1ae" />
+![OUTPUT Screen](<img width="838" height="391" alt="Screenshot 2026-01-22 154711" src="https://github.com/user-attachments/assets/60128c04-b0c6-4b8a-8a3e-f848ef0dd1ae" />
 .png)
 
