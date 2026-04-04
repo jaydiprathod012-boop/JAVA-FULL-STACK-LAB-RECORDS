@@ -1,3 +1,5 @@
+A) Student Class Program
+
 import java.util.Scanner;
 
 class Student {
@@ -23,5 +25,65 @@ public class Main {
         Student s1 = new Student();   // Object creation
         s1.accept();                  // Method call
         s1.display();                 // Method call
+    }
+}
+
+
+
+
+
+
+
+B) BankAccount Class Program
+
+
+
+import java.util.Scanner;
+
+class BankAccount {
+    String name;
+    int accNo;
+    double balance;
+
+    void createAccount() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Name: ");
+        name = sc.nextLine();
+        System.out.print("Enter Account Number: ");
+        accNo = sc.nextInt();
+        System.out.print("Enter Initial Balance: ");
+        balance = sc.nextDouble();
+    }
+
+    void deposit(double amount) {
+        balance = balance + amount;
+        System.out.println("Amount Deposited: " + amount);
+    }
+
+    void withdraw(double amount) {
+        if (amount <= balance) {
+            balance = balance - amount;
+            System.out.println("Amount Withdrawn: " + amount);
+        } else {
+            System.out.println("Insufficient Balance");
+        }
+    }
+
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Account No: " + accNo);
+        System.out.println("Balance: " + balance);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        BankAccount b1 = new BankAccount();  // Object creation
+        b1.createAccount();
+
+        b1.deposit(500);
+        b1.withdraw(200);
+
+        b1.display();
     }
 }
