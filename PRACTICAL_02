@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Student {
+    String name;
+    int marks;
+
+    void accept() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Name: ");
+        name = sc.nextLine();
+        System.out.print("Enter Marks: ");
+        marks = sc.nextInt();
+    }
+
+    void display() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Marks: " + marks);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student();   // Object creation
+        s1.accept();                  // Method call
+        s1.display();                 // Method call
+    }
+}
