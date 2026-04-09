@@ -1,1 +1,50 @@
+// Base Class
+class Shape {
+    void area() {
+        System.out.println("Area not defined");
+    }
+}
 
+// Derived Class 1
+class Circle extends Shape {
+    double radius;
+
+    Circle(double r) {
+        radius = r;
+    }
+
+    void area() {
+        double result = 3.14 * radius * radius;
+        System.out.println("Area of Circle: " + result);
+    }
+}
+
+// Derived Class 2
+class Rectangle extends Shape {
+    double length, width;
+
+    Rectangle(double l, double w) {
+        length = l;
+        width = w;
+    }
+
+    void area() {
+        double result = length * width;
+        System.out.println("Area of Rectangle: " + result);
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+        Shape s;
+
+        // Circle object
+        s = new Circle(5);
+        s.area();
+
+        // Rectangle object
+        s = new Rectangle(4, 6);
+        s.area();
+    }
+}
